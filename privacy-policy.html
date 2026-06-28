@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Valikati Astrology App</title>
+    <meta name="description" content="Privacy Policy for Valikati Mobile App. Learn how we collect, use, and protect your information.">
+    <meta name="robots" content="noindex, follow">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styling -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .policy-section {
+            padding: 140px 0 80px 0;
+            min-height: 80vh;
+        }
+        
+        .policy-box {
+            background: var(--bg-secondary);
+            border: var(--border-glow);
+            border-radius: 24px;
+            padding: 50px;
+            max-width: 900px;
+            margin: 0 auto;
+            backdrop-filter: blur(10px);
+        }
+        
+        .policy-box h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        
+        .policy-meta {
+            color: var(--gold);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            display: block;
+        }
+        
+        .policy-content {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        
+        .policy-content h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 35px 0 15px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            padding-bottom: 8px;
+        }
+        
+        .policy-content p {
+            margin-bottom: 16px;
+        }
+        
+        .policy-content ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        
+        .policy-content li {
+            margin-bottom: 8px;
+        }
+        
+        .btn-back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gold-light);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+            transition: var(--transition-smooth);
+        }
+        
+        .btn-back-home:hover {
+            color: var(--gold);
+            transform: translateX(-4px);
+        }
+        
+        @media (max-width: 768px) {
+            .policy-box {
+                padding: 30px 20px;
+            }
+            .policy-box h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Canvas background -->
+    <canvas id="stars-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" stroke="url(#goldGrad)" stroke-width="2"/>
+                    <circle cx="50" cy="50" r="30" stroke="url(#goldGrad)" stroke-width="1" stroke-dasharray="4 4"/>
+                    <path d="M50 15L59 38L83 38L64 53L70 77L50 63L30 77L36 53L17 38L41 38L50 15Z" fill="url(#goldGrad)"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="brand-name">Valikatti</span>
+                    <span class="brand-tamil">வழிகாட்டி</span>
+                </div>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#rasi-palan" class="nav-link">Daily Rasi Palan</a>
+                <a href="index.html#compatibility" class="nav-link">Love Compatibility</a>
+                <a href="index.html#faq" class="nav-link">FAQ</a>
+                <a href="privacy-policy.html" class="nav-link active">Privacy Policy</a>
+            </nav>
+            <a href="index.html#download" class="btn btn-primary btn-nav">Download App</a>
+        </div>
+    </header>
+
+    <!-- Privacy Policy Document Body -->
+    <section class="policy-section">
+        <div class="container">
+            <a href="index.html" class="btn-back-home">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Landing Page
+            </a>
+            
+            <div class="policy-box">
+                <h1>Privacy Policy for Valikati</h1>
+                <span class="policy-meta">Effective Date: March 20, 2026</span>
+                
+                <div class="policy-content">
+                    <p>Welcome to Valikati. Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use the Valikati mobile application.</p>
+                    
+                    <h2>Information We Collect</h2>
+                    <p>We may collect the following information:</p>
+                    <ul>
+                        <li>Name</li>
+                        <li>Email Address</li>
+                        <li>Selected Rasi (Zodiac Sign)</li>
+                        <li>Date of Birth (if provided)</li>
+                        <li>Firebase Cloud Messaging (FCM) Token</li>
+                        <li>Device Information (device model, operating system, app version)</li>
+                        <li>AI Chat Messages (used to provide AI Jothidar responses)</li>
+                    </ul>
+
+                    <h2>How We Use Your Information</h2>
+                    <p>We use your information to:</p>
+                    <ul>
+                        <li>Create and manage your account</li>
+                        <li>Personalize astrology predictions</li>
+                        <li>Display Daily, Weekly, Monthly, and Yearly Rasi Palan</li>
+                        <li>Provide Panchangam, Nalla Neram, and Mugurtham information</li>
+                        <li>Send push notifications</li>
+                        <li>Improve AI Jothidar responses</li>
+                        <li>Improve the performance and security of the application</li>
+                    </ul>
+
+                    <h2>Push Notifications</h2>
+                    <p>Valikati uses Firebase Cloud Messaging (FCM) to send:</p>
+                    <ul>
+                        <li>Daily Horoscope Updates</li>
+                        <li>Festival Notifications</li>
+                        <li>Important Announcements</li>
+                        <li>Personalized notifications based on your selected Rasi</li>
+                    </ul>
+                    <p>You can disable notifications at any time through your device settings.</p>
+
+                    <h2>AI Services</h2>
+                    <p>The AI Jothidar feature uses AI technology to generate astrology guidance based on the information you provide.</p>
+                    <p>AI-generated responses are intended for informational and entertainment purposes only and should not be considered professional financial, legal, or medical advice.</p>
+
+                    <h2>Data Storage</h2>
+                    <p>Your information is securely stored using:</p>
+                    <ul>
+                        <li>MongoDB</li>
+                        <li>Prisma ORM</li>
+                        <li>Secure Express.js Backend</li>
+                        <li>Firebase Cloud Messaging</li>
+                    </ul>
+                    <p>We use reasonable security measures to protect your personal information.</p>
+
+                    <h2>Data Sharing</h2>
+                    <p>We do not sell or rent your personal information.</p>
+                    <p>Your information may only be shared with trusted third-party services necessary to operate the app, including:</p>
+                    <ul>
+                        <li>Firebase (Push Notifications)</li>
+                        <li>AI Service Provider</li>
+                        <li>Cloud Hosting Provider</li>
+                    </ul>
+
+                    <h2>Data Retention</h2>
+                    <p>We retain your information only for as long as necessary to provide our services or comply with legal obligations.</p>
+
+                    <h2>Your Rights</h2>
+                    <p>You may request to:</p>
+                    <ul>
+                        <li>View your personal information</li>
+                        <li>Update your information</li>
+                        <li>Delete your account</li>
+                        <li>Delete your stored data</li>
+                    </ul>
+                    <p>To make such a request, please contact us using the email below.</p>
+
+                    <h2>Children's Privacy</h2>
+                    <p>Valikati is not intended for children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+                    <h2>Changes to this Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time. Any changes will be posted within the app or on our website.</p>
+
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions regarding this Privacy Policy, please contact us:</p>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:support@valikati.com">support@valikati.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Valikati App. All rights reserved. Privacy compliance portal.</p>
+        </div>
+    </footer>
+
+    <!-- Canvas starry background script trigger -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Re-initialize starry background for policy page
+            const canvas = document.getElementById('stars-canvas');
+            if (canvas) {
+                const ctx = canvas.getContext('2d');
+                let stars = [];
+                function resize() {
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                    stars = [];
+                    for(let i=0; i<80; i++) {
+                        stars.push({
+                            x: Math.random() * canvas.width,
+                            y: Math.random() * canvas.height,
+                            size: Math.random() * 1.5 + 0.5,
+                            alpha: Math.random(),
+                            speed: Math.random() * 0.04 + 0.01,
+                            dir: Math.random() > 0.5 ? 1 : -1
+                        });
+                    }
+                }
+                function draw() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    stars.forEach(s => {
+                        s.y += s.speed;
+                        s.alpha += s.speed * 0.1 * s.dir;
+                        if(s.alpha >= 1) s.dir = -1;
+                        else if(s.alpha <= 0.1) s.dir = 1;
+                        if(s.y > canvas.height) {
+                            s.y = 0; s.x = Math.random() * canvas.width;
+                        }
+                        ctx.fillStyle = `rgba(255,255,255,${s.alpha})`;
+                        ctx.beginPath();
+                        ctx.arc(s.x, s.y, s.size, 0, Math.PI*2);
+                        ctx.fill();
+                    });
+                    requestAnimationFrame(draw);
+                }
+                window.addEventListener('resize', resize);
+                resize();
+                draw();
+            }
+        });
+    </script>
+</body>
+</html>
